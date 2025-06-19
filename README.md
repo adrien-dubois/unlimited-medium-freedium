@@ -25,7 +25,7 @@ The extension recognizes and redirects the following Medium URL patterns:
 - Settings: `https://medium.com/settings`
 - Any other non-article pages
 
-> **Note**: This pattern set is not exhaustive. Medium may use additional URL patterns for articles that are not currently recognized. If you encounter a valid Medium article that isn't being redirected, please [file a bug report](https://github.com/danglingP0inter/unlimited-medium-freedium/issues) with the URL pattern so we can add support for it.
+> **Note**: This pattern set is not exhaustive. Medium may use additional URL patterns for articles that are not currently recognized. If you encounter a valid Medium article that isn't being redirected, please [file a bug report](https://github.com/danglingP0inter/unlimited-medium-freedium/issues) with the URL pattern so I can add support for it.
 
 ## Installation
 
@@ -61,12 +61,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Contributions are welcome! Please feel free to file a bug report and/or submit a Pull Request.
 
-## Support
-
-If you find this extension useful, please consider:
-- Giving it a star on GitHub
-- Supporting [Freedium](https://freedium.cfd) by donating to help maintain their service
-
 ## Acknowledgements
 
-This extension wouldn't be possible without [Freedium](https://freedium.cfd), which provides the service to read Medium articles without a paywall. A big thank you to the Freedium team for making this possible! 
+This extension wouldn't be possible without [Freedium](https://freedium.cfd), which provides the service to read Medium articles without a paywall. If you find this extension useful, please consider supporting [Freedium](https://freedium.cfd) by donating to help maintain their service

@@ -63,4 +63,4 @@ Contributions are welcome! Please feel free to file a bug report and/or submit a
 
 ## Acknowledgements
 
-This extension wouldn't be possible without [Freedium](https://freedium.cfd), which provides the service to read Medium articles without a paywall. If you find this extension useful, please consider supporting [Freedium](https://freedium.cfd) by donating to help maintain their service
+This extension wouldn't be possible without [Freedium](https://freedium-mirror.cfd), which provides the service to read Medium articles without a paywall. If you find this extension useful, please consider supporting [Freedium](https://freedium-mirror.cfd) by donating to help maintain their service

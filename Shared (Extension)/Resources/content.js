@@ -56,7 +56,7 @@ const handleArticleRedirect = () => {
         });
         
         // Construct the Freedium URL
-        const freediumUrl = `https://freedium.cfd/${window.location.href}`;
+        const freediumUrl = `https://freedium-mirror.cfd/${window.location.href}`;
         
         // Redirect to Freedium
         window.location.href = freediumUrl;
@@ -88,7 +88,7 @@ document.addEventListener('click', (event) => {
                     event.preventDefault();
                     
                     // Construct the Freedium URL
-                    const freediumUrl = `https://freedium.cfd/${link.href}`;
+                    const freediumUrl = `https://freedium-mirror.cfd/${link.href}`;
                     
                     // Navigate to Freedium
                     window.location.href = freediumUrl;

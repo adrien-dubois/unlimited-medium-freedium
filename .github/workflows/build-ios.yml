@@ -16,7 +16,7 @@ jobs:
       - name: Build iOS (non signé)
         run: |
           xcodebuild -project "unlimited-medium-freedium.xcodeproj" \
-            -scheme "iOS (App)" \
+            -scheme "unlimited-medium-freedium (iOS)" \
             -sdk iphoneos \
             -configuration Release \
             CODE_SIGNING_ALLOWED=NO \

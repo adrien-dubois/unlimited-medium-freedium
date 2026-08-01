@@ -1,0 +1,36 @@
+name: Build unsigned iOS IPA
+
+on:
+  workflow_dispatch:   # équivalent d'un job "when: manual" en GitLab CI
+
+jobs:
+  build:
+    runs-on: macos-latest   # équivalent d'un "tags: [macos]"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lister les schemes disponibles
+        run: xcodebuild -list -project "unlimited-medium-freedium.xcodeproj"
+
+      - name: Build iOS (non signé)
+        run: |
+          xcodebuild -project "unlimited-medium-freedium.xcodeproj" \
+            -scheme "iOS (App)" \
+            -sdk iphoneos \
+            -configuration Release \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            -derivedDataPath build \
+            build
+
+      - name: Packager en IPA
+        run: |
+          mkdir -p Payload
+          cp -r "build/Build/Products/Release-iphoneos/"*.app Payload/
+          zip -r unlimited-medium-freedium.ipa Payload
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: unlimited-medium-freedium-ipa
+          path: unlimited-medium-freedium.ipa
